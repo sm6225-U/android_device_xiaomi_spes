@@ -23,6 +23,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/mixer_paths_idp_india.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/mixer_paths_idp_india.xml \
     $(LOCAL_PATH)/configs/audio/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/audio_policy_configuration.xml
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.lights-service.spes
+
 
 # AOSP Permissions
 PRODUCT_COPY_FILES += \

@@ -30,6 +30,10 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a9
 
+# Init
+TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_spes
+TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_spes
+
 # Platform
 TARGET_BOARD_PLATFORM := bengal
 

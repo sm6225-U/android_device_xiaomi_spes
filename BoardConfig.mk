@@ -30,6 +30,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a9
 
+# Platform
+TARGET_BOARD_PLATFORM := bengal
 
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop

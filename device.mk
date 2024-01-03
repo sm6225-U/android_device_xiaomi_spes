@@ -15,6 +15,9 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
+    android.hardware.audio.service \
+
+PRODUCT_PACKAGES += \
     audioadsprpcd \
     audio.primary.bengal \
     audio.r_submix.default \

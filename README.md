@@ -1,4 +1,4 @@
-# Android device tree for Redmi spes (spes)
+# Android device tree for Redmi Note 11 (spes)
 
 ```
 #

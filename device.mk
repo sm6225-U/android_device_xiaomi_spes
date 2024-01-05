@@ -147,6 +147,57 @@ PRODUCT_PACKAGES += \
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/keylayout/,$(TARGET_COPY_OUT_VENDOR)/usr/keylayout)
+    
+# Rootdir
+PRODUCT_PACKAGES += \
+    bluedut.sh \
+    bt_close.sh \
+    init.class_main.sh \
+    init.crda.sh \
+    init.mdm.sh \
+    init.mi.usb.sh \
+    init.qcom.class_core.sh \
+    init.qcom.coex.sh \
+    init.qcom.early_boot.sh \
+    init.qcom.efs.sync.sh \
+    init.qcom.post_boot.sh \
+    init.qcom.sdio.sh \
+    init.qcom.sensors.sh \
+    init.qcom.sh \
+    init.qcom.usb.sh \
+    init.qti.chg_policy.sh \
+    init.qti.dcvs.sh \
+    init.qti.display_boot.sh \
+    init.qti.early_init.sh \
+    init.qti.media.sh \
+    init.qti.qcv.sh \
+    lct_rfs_restore.sh \
+    loopback.sh \
+    myftm.agent.sh \
+    playback.sh \
+    qca6234-service.sh \
+    record.sh \
+    record_playback.sh \
+    ultra_playback.sh \
+    ultra_record.sh \
+    wifitest.sh \
+    wifitest_close.sh \
+
+PRODUCT_PACKAGES += \
+    fstab.emmc \
+    init.qcom.factory.rc \
+    init.qcom.rc \
+    init.qcom.usb.rc \
+    init.qti.ufs.rc \
+    init.stnfc.rc \
+    init.target.rc \
+    init.recovery.hardware.rc \
+    init.recovery.qcom.rc \
+    miui.factoryreset.rc \
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_VENDOR_RAMDISK_OUT)/first_stage_ramdisk/fstab.emmc    
+    
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf

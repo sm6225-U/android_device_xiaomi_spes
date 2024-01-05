@@ -150,38 +150,13 @@ PRODUCT_COPY_FILES += \
     
 # Rootdir
 PRODUCT_PACKAGES += \
-    bluedut.sh \
-    bt_close.sh \
     init.class_main.sh \
-    init.crda.sh \
     init.mdm.sh \
     init.mi.usb.sh \
-    init.qcom.class_core.sh \
-    init.qcom.coex.sh \
     init.qcom.early_boot.sh \
-    init.qcom.efs.sync.sh \
     init.qcom.post_boot.sh \
-    init.qcom.sdio.sh \
-    init.qcom.sensors.sh \
     init.qcom.sh \
-    init.qcom.usb.sh \
-    init.qti.chg_policy.sh \
     init.qti.dcvs.sh \
-    init.qti.display_boot.sh \
-    init.qti.early_init.sh \
-    init.qti.media.sh \
-    init.qti.qcv.sh \
-    lct_rfs_restore.sh \
-    loopback.sh \
-    myftm.agent.sh \
-    playback.sh \
-    qca6234-service.sh \
-    record.sh \
-    record_playback.sh \
-    ultra_playback.sh \
-    ultra_record.sh \
-    wifitest.sh \
-    wifitest_close.sh \
 
 PRODUCT_PACKAGES += \
     fstab.emmc \

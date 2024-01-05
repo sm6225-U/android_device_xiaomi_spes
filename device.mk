@@ -84,7 +84,19 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.audio.dirac.speaker=true \
     persist.dirac.acs.controller=qem \
     persist.dirac.acs.storeSettings=1 \
-    persist.dirac.acs.ignore_error=1    
+    persist.dirac.acs.ignore_error=1   
+    
+# Overlays
+PRODUCT_PACKAGES += \
+    AOSPSpesFrameworksOverlay \
+    SpesFrameworksOverlay \
+    SpesSettingsOverlay \
+    SpesSystemUIOverlay \
+    SpesWifiOverlay \
+    SpesCarrierConfigOverlayOverlay \
+    SettingsProvider2201117TGOverlay \
+    SettingsProvider2201117TIOverlay \
+    SettingsProvider2201117TYOverlay     
 
 # AOSP Permissions
 PRODUCT_COPY_FILES += \

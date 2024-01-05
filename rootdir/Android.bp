@@ -92,6 +92,14 @@ prebuilt_etc {
     vendor: true,
 }
 
+// ueventd
+prebuilt_etc {
+    name: "ueventd.qti.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.qti.rc",
+    vendor: true,
+}
+
 // fstab
 prebuilt_etc {
     name: "fstab.qcom",

@@ -60,6 +60,7 @@ TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Sepolicy
+-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
 -include device/xiaomi/spes/sepolicy/spes-sepolicy.mk
 
 # Kernel

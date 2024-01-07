@@ -56,10 +56,11 @@ TARGET_NO_BOOTLOADER := true
 
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
-# Screen density
-TARGET_SCREEN_DENSITY := 440
+# Build Hacks
+BUILD_BROKEN_DUP_RULES := true
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES  := true
+BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 3
@@ -97,6 +98,9 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+
+# Screen density
+TARGET_SCREEN_DENSITY := 440
 
 # Sepolicy
 -include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk

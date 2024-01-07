@@ -56,12 +56,10 @@ TARGET_NO_BOOTLOADER := true
 
 # Board
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-
 BUILD_BROKEN_VENDOR_PROPERTY_NAMESPACE := true
 
-# Sepolicy
--include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
--include device/xiaomi/spes/sepolicy/spes-sepolicy.mk
+# Screen density
+TARGET_SCREEN_DENSITY := 440
 
 # Kernel
 BOARD_BOOTIMG_HEADER_VERSION := 3
@@ -99,6 +97,10 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(DEVICE_PATH)/product.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/system_ext.prop
 TARGET_ODM_PROP += $(DEVICE_PATH)/odm.prop
+
+# Sepolicy
+-include device/qcom/sepolicy_vndr-legacy-um/SEPolicy.mk
+-include device/xiaomi/spes/sepolicy/spes-sepolicy.mk
 
 # WiFi
 BOARD_WLAN_DEVICE := qcwcn

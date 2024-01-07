@@ -177,6 +177,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf
 
+
+# Manifests
+DEVICE_FRAMEWORK_MANIFEST_FILE := $(LOCAL_PATH)/configs/framework_manifest.xml
+DEVICE_MANIFEST_FILE := $(LOCAL_PATH)/configsl/manifest.xml
+DEVICE_MATRIX_FILE   := $(LOCAL_PATH)/configs/compatibility_matrix.xml    
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 30
 

@@ -205,6 +205,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Include OSS Hals
 include $(TOPDIR)/hardware/qcom-caf/bengal/audio/configs/bengal/bengal.mk
+include $(TOPDIR)/hardware/qcom-caf/bengal/display/config/display-product.mk
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/xiaomi/spes/spes-vendor.mk)
